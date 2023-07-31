@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111;
+  margin: 5rem 6rem;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: right;
+}
+.header a {
+  text-decoration: none;
+  /* color: orangered; */
+  color: #0f0;
+}
+.header a:hover{
+  font-weight: 800;
+}
+.container {
+  font-size: 4rem;
+  margin-top: 5.5rem;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17rem;
+}
+.contact h1 {
+  color: #ff2770;
+
+}
+.contact h1:hover {
+  /* text-decoration: underline; */
+  border-bottom:.1rem solid #0f0;
+  max-width: max-content;
+}
+.contact form{
+  width: 100%;
+  margin-top: 2rem;
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.submitBtn {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: white;
+  padding:1rem 2rem;
+  border-radius: 2rem;
+  border: .1rem solid #0f0;
+  cursor : pointer;
+}
+.submitBtn:hover {
+    background-color: #0f0;
+    box-shadow: 0 0 1rem whitesmoke;
+    color: black;
+    /* font-weight: 600; */
+}
+
+@media (max-width:50em){
+  .container{
+    font-size: 3rem;
+  }
+  body{
+    margin: 4rem 3rem;
+  }
+  .main{
+    margin-top: 10rem;
+  }
+}
+@media (max-width:31.25em){
+  body{
+    margin: 3rem 2rem;
+  }
+  .main{
+    margin-top: 5rem;
+  }
+  .container{
+    font-size: 2rem;
+  }
+  .contact{
+    font-size: 1rem;
+  }
+}
+

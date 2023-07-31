@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactMe.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><---</a>    
+    </div>
+    <div class="container">
+        Don't Be Shy, Say Hello!👋<br>
+        <br>
+        Get In Touch...
+    </div>
+    
+
+    <div class="main">
+        <div class="contact">
+          <h1>📞 Contact Me </h1>
+          <form>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+            <button class="submitBtn" type="submit" onclick="show()">Submit</button>
+          </form>
+          
+          
+        </div>
+          
+    </div>
+<script>
+    function show(){
+        var name = document.getElementById('name');
+        var email = document.getElementById('email');
+        var message = document.getElementById('message');
+        if(name.value === '' || email.value === '' || message.value === ''){
+            alert("Please fill all the fields")
+        }else{
+            alert("Thank you for your feedback")
+        } 
+    }
+</script>
+</body>
+</html>

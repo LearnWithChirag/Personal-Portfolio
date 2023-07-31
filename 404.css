@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    font-size: 2rem;
+    margin-top: 2rem;
+    /* position: absolute; */
+    display: flex;
+    justify-content: right;
+}
+.back a{
+    background-color: black;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    /* color: orangered; */
+    color: #0f0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: yellow;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    font-size: 13rem;
+
+    background: linear-gradient(transparent , blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+}
+.top{
+    animation: blink infinite 2s ease-in-out;
+
+}
+@keyframes blink{
+    0%{
+        color: red;
+    }
+    100%{
+        color: green;
+
+    }
+}
+.down{
+    margin-top: 3rem;
+}
+.link{
+    margin-top: 3rem;
+}
+.link a{
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: black;
+}
+.link a:hover{
+    color: blue;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Chirag</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"><---</a>
+    </div>
+    <div class="container">
+      I am ,<span class="multiText">Full Stack Developer</span> <br />I design
+      and Build Webpages
+    </div>
+    <div class="imgContainer">
+      <img class="img" src="source/my.jpg" alt="profile" />
+    </div>
+    <div class="aboutSection">
+      <div class="aboutHead">About</div>
+      <div class="about">
+        <p>Hello visitors, I am <b>Chirag Paliwal😊</b>,</p>
+        <br />
+        <p>
+          I am an <b>enthusiastic</b>, <b>self-motivated</b>, <b>reliable</b>,
+          <b>responsible</b> and <b>hard working person</b>.
+        </p>
+        <br />
+        <p>
+          I have completed my graduation in
+          <b>Bachelor in Computer Application</b> from C.B Patel Computer
+          College, Surat, Gujarat.
+        </p>
+        <br />
+
+        <p>
+          I am a <b>mature team worker</b> and adaptable to all challenging
+          situations.
+        </p>
+
+        <br />
+        <p>
+          I am able to work well both in a team environment as well as
+          <b>using own initiative.</b>
+        </p>
+        <br />
+        <p>
+          I am able to work well <b>under pressure</b> and adhere to strict
+          deadlines.
+        </p>
+        <br />
+        <p>
+          Most of my time I <b>build websites</b> and <b>design web pages</b>
+        </p>
+        <br />
+        <p>
+          I have experience working with <b>MySQL</b> , <b>MongoDB</b> ,
+          <b>Python</b> , <b>CSS</b> , <b>Java</b> , <b>JavaScript</b>.
+        </p>
+        <br />
+        <p>I define myself by the work I want to do.</p>
+        <br />
+        <p>
+          I prefer to <b>keep learning</b>, continue <b>challenging myself</b>,
+          and do interesting things that matter.
+        </p>
+      </div>
+      <span class="resume">
+        <a href="source/resume.pdf" class="resumeLink" target="_blank"
+          >Resume</a
+        >
+      </span>
+    </div>
+
+    <div class="skillHead">Skills</div>
+    <div class="skills">
+      <div class="card">
+        <div class="imgBox">
+          <img class="ts" src="source/tcs.jpg" alt="Technical Skills">
+        </div>
+        <div class="content">
+          <!-- <h2>Technical Skills</h2> -->
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>React JS</li>
+          <li>Node JS</li>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBox">
+          <img class="ss" src="source/ss.jpeg" alt="Soft Skills">
+        </div>
+        <div class="content">
+          <!-- <h2>Soft Skills</h2> -->
+          <li>
+            Efficient and Effective Communication Skills
+          </li>
+          <li>
+            Self Organized and Able to Work Independently
+          </li>
+          <li>
+            Motivated to Take on New Challenges
+          </li>
+          <li>
+            Team Player
+          </li>
+          <li>
+            Open to Receive and Deliver Clear and Usefull Criticism
+          </li>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBox">
+          <img class="hs" src="source/hs.jpg" alt="Hard Skills">
+        </div>
+        <div class="content">
+          <!-- <h2>Hard Skills</h2> -->
+          <li>
+            Ability to Work and Juggle between Multiple Projects
+          </li>
+          <li>
+            Strong Coordination Skills
+          </li>
+          <li>
+            Lean and Agile Software Development Skills
+          </li>
+          <!-- <li>four</li> -->
+          <!-- <li>five</li> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const text = document.querySelector(".multiText");
+
+      const textContent = function (...values) {
+        // console.log(values)
+        const arr = values;
+        let num = 0;
+        setInterval(function () {
+          text.textContent = arr[num];
+
+          if (num < arr.length - 1) {
+            num++;
+          } else {
+            num = 0;
+          }
+        }, 5000);
+      };
+      textContent(
+        `Front End Developer`,
+        `Back End Developer`,
+        `Web Designer`,
+        `Full Stack Developer`
+      );
+    </script>
+  </body>
+</html>
