@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #111;
+    margin: 5rem 6rem;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: right;
+  }
+  .header a {
+    text-decoration: none;
+    /* color: orangered; */
+    color: #0f0;
+  }
+  .header a:hover{
+    font-weight: 800;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
