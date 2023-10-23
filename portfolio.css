@@ -30,3 +30,28 @@
     font-size: 2rem;
     margin-top: 4rem;
   }
+
+  .github-repo-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .github-repo-btn a{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: #000;
+    color: white;
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    border: .1rem solid #0f0;
+    cursor : pointer;
+  }
+
+  .github-repo-btn a:hover{
+    background-color: #0f0;
+    box-shadow: 0 0 1rem whitesmoke;
+    color: black;
+    font-weight: 600;
+  }
